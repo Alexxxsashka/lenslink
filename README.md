@@ -2,6 +2,8 @@
 
 **Turn a phone browser into a camera for your desktop and OBS.** Open source, no phone app, no account. Русский интерфейс.
 
+**Live:** https://lenslink-lemon.vercel.app · **Source:** https://github.com/Alexxxsashka/lenslink
+
 Lenslink captures video and microphone audio in Safari/Chrome, transmits them over encrypted WebRTC, and provides a desktop studio, a clean OBS Browser Source, browser dock controls, local effects and recording.
 
 ## Use
