@@ -1,0 +1,10 @@
+# Self-hosted signaling only. Put behind a TLS/WSS reverse proxy.
+# Forward /peerjs/* to http://127.0.0.1:9000/peerjs/*.
+# TURN is a separate service; Vercel's static host does not run this container.
+services:
+  signaling:
+    image: peerjs/peerjs-server:1.0.2
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9000:9000"
+    command: ["--port", "9000", "--path", "/peerjs", "--proxied", "true"]
